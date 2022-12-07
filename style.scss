@@ -79,7 +79,7 @@ $borda1: solid 1.5rem;
             }
             .item-movimentacoes{
                 padding: 0;
-                border-bottom: solid 1px $cor4;
+                
                 .valor-pago{
                     color: $corGasto;
                 }
@@ -122,6 +122,9 @@ $borda1: solid 1.5rem;
         }
         .movimentacoes{
             border-bottom: $borda1 $cor4;
+            .item-movimentacoes{
+                border-bottom: solid 1px $cor4;
+            }
         }
     
     }
@@ -131,6 +134,9 @@ $borda1: solid 1.5rem;
         }
         .movimentacoes{
             border-bottom: $borda1 $cor5;
+            .item-movimentacoes{
+                border-bottom: solid 1px $cor5;
+            }
         }
     }
 }

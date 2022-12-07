@@ -61,7 +61,6 @@
 }
 .movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes {
   padding: 0;
-  border-bottom: solid 1px #820AD1;
 }
 .movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes .valor-pago {
   color: red;
@@ -96,9 +95,15 @@
 .movimentacoes-container .nubank .movimentacoes {
   border-bottom: solid 1.5rem #820AD1;
 }
+.movimentacoes-container .nubank .movimentacoes .item-movimentacoes {
+  border-bottom: solid 1px #820AD1;
+}
 .movimentacoes-container .caixa .banco, .movimentacoes-container .caixa .barra-lateral {
   background-color: #005CA9;
 }
 .movimentacoes-container .caixa .movimentacoes {
   border-bottom: solid 1.5rem #005CA9;
+}
+.movimentacoes-container .caixa .movimentacoes .item-movimentacoes {
+  border-bottom: solid 1px #005CA9;
 }/*# sourceMappingURL=style.css.map */
