@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.myNavbar {
+  background-color: #7400B8;
+  font-family: "Julius Sans One", sans-serif;
+  -webkit-text-stroke: 1px #FFF;
+}
+.myNavbar .navbar-container {
+  justify-content: center;
+}
+
+.titulo {
+  background-color: #56CFE1;
+  font-family: "Julius Sans One", sans-serif;
+  -webkit-text-stroke: 1px #FFF;
+  padding-left: 20px;
+}
+
+.movimentacoes-container {
+  margin: 2px;
+  display: grid;
+  gap: 2px;
+}
+.movimentacoes-container li {
+  text-align: center;
+  width: 20%;
+}
+.movimentacoes-container .banco {
+  height: 1.5rem;
+  color: #FFF;
+  margin-bottom: 2px;
+}
+.movimentacoes-container .banco h2 {
+  font-family: "Kulim Park", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.movimentacoes-container .movimentacoes-e-barra {
+  display: flex;
+  font-size: small;
+}
+.movimentacoes-container .movimentacoes-e-barra p {
+  margin: 0;
+  padding: 0;
+}
+.movimentacoes-container .movimentacoes-e-barra .barra-lateral {
+  width: 1.5rem;
+  z-index: 2;
+  border-right: solid 2px #FFF;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .info-movimentacoes {
+  background-color: #B1B1B1;
+  color: #FFF;
+  font-family: "Julius Sans One", sans-serif;
+  -webkit-text-stroke: 1px #FFF;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes {
+  padding: 0;
+  border-bottom: solid 1px #820AD1;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes .valor-pago {
+  color: red;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes .valor-recebido {
+  color: green;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes img {
+  height: 15px;
+  margin-right: 10px;
+}
+.movimentacoes-container .movimentacoes-e-barra .movimentacoes .item-movimentacoes .transferencias-imagem {
+  height: 20px;
+}
+@media (max-width: 768px) {
+  .movimentacoes-container .movimentacoes-e-barra .barra-lateral {
+    display: none;
+  }
+  .movimentacoes-container .movimentacoes-e-barra li {
+    width: 25%;
+  }
+  .movimentacoes-container .movimentacoes-e-barra .categoria-label {
+    display: none;
+  }
+  .movimentacoes-container .movimentacoes-e-barra .categoria {
+    display: none !important;
+  }
+}
+.movimentacoes-container .nubank .banco, .movimentacoes-container .nubank .barra-lateral {
+  background-color: #820AD1;
+}
+.movimentacoes-container .nubank .movimentacoes {
+  border-bottom: solid 1.5rem #820AD1;
+}
+.movimentacoes-container .caixa .banco, .movimentacoes-container .caixa .barra-lateral {
+  background-color: #005CA9;
+}
+.movimentacoes-container .caixa .movimentacoes {
+  border-bottom: solid 1.5rem #005CA9;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Fintech</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark myNavbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-container" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Recentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Despesas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Receita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Investimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="titulo">Movimentações recentes</div>
+    <main class="movimentacoes-container container-fluid">
+
+        <div class="row  nubank">
+            <span class="banco w-100">
+                <img src="imagens/nubank.png" alt="logo da nubank">
+                <h2 class="d-inline">PRINCIPAL</h2>
+            </span>
+            <div class="movimentacoes-e-barra w-100">
+                <div class="barra-lateral"></div>
+                <div class="movimentacoes w-100">
+                    <ul class="row m-0 pt-2 pb-2 list-unstyled info-movimentacoes">
+                        <li>Nome</li>
+                        <li>Valor</li>
+                        <li class=" categoria-label">Categoria</li>
+                        <li>Data</li>
+                        <li>Hora</li>
+                    </ul>
+                    <div class="lista-movimentacoes">
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>ifood *ifood</li>
+                            <li class=" valor-pago">- R$ 32,20</li>
+                            <li class=" d-flex align-items-center justify-content-center categoria">
+                                <img src="imagens/drink.png" alt="">
+                                <p>Bares/Restaurantes</p>
+                            </li>
+                            <li>06 Nov</li>
+                            <li>15h28</li>
+                        </ul>
+
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Uber *Uber *Trip</li>
+                            <li class=" valor-pago">- R$ 10,27</li>
+                            <li class=" d-flex align-items-center justify-content-center categoria">
+                                <img src="imagens/onibus.png" alt="">
+                                <p>Transporte</p>
+                            </li>
+                            <li>06 Nov</li>
+                            <li>09h23</li>
+                        </ul>
+
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Pix/Aline Guttner Ce</li>
+                            <li class="valor-recebido">+ R$ 2680,20</li>
+                            <li class="d-flex align-items-center justify-content-center categoria">
+                                <img class="transferencias-imagem" src="imagens/Recebido.png" alt="">
+                                <p>Transf. recebidas</p>
+                            </li>
+                            <li>05 Nov</li>
+                            <li>10h55</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row caixa">
+            <span class="banco w-100">
+                <img src="imagens/caixa.png" alt="logo da nubank">
+                <h2 class="d-inline">CAIXA CORRENTE</h2>
+            </span>
+            <div class="movimentacoes-e-barra w-100">
+                <div class="barra-lateral"></div>
+                <div class="movimentacoes w-100">
+                    <ul class="row m-0 pt-2 pb-2 list-unstyled info-movimentacoes">
+                        <li>Nome</li>
+                        <li>Valor</li>
+                        <li class="categoria-label">Categoria</li>
+                        <li>Data</li>
+                        <li>Hora</li>
+                    </ul>
+                    <div class="lista-movimentacoes">
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Pix/Aline Guttner Ce</li>
+                            <li class=" valor-pago"> - R$ 320,20</li>
+                            <li class=" d-flex align-items-center justify-content-center categoria">
+                                <img class="transferencias-imagem" src="imagens/Enviado.png" alt="">
+                                <p>Transf. enviadas</p>
+                            </li>
+                            <li>05 Nov</li>
+                            <li>11h03</li>
+                        </ul>
+
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Pix/Aline Guttner Ce</li>
+                            <li class=" valor-pago"> - R$ 2680,00</li>
+                            <li class=" d-flex align-items-center justify-content-center categoria">
+                                <img class="transferencias-imagem" src="imagens/Enviado.png" alt="">
+                                <p>Transf. enviadas</p>
+                            </li>
+                            <li>05 Nov</li>
+                            <li>10h55</li>
+                        </ul>
+
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Pix/Empresa Legal</li>
+                            <li class="valor-recebido"> + R$ 3020,20</li>
+                            <li class="d-flex align-items-center justify-content-center categoria">
+                                <img class="transferencias-imagem" src="imagens/Recebido.png" alt="">
+                                <p>Transf. recebidas</p>
+                            </li>
+                            <li>05 Nov</li>
+                            <li>10h43</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row caixa">
+            <span class="banco w-100">
+                <img src="imagens/caixa.png" alt="logo da nubank">
+                <h2 class="d-inline">CAIXA POUPANÇA</h2>
+            </span>
+            <div class="movimentacoes-e-barra w-100">
+                <div class="barra-lateral"></div>
+                <div class="movimentacoes w-100">
+                    <ul class="row m-0 pt-2 pb-2 list-unstyled info-movimentacoes">
+                        <li>Nome</li>
+                        <li>Valor</li>
+                        <li class="categoria-label">Categoria</li>
+                        <li>Data</li>
+                        <li>Hora</li>
+                    </ul>
+                    <div class="lista-movimentacoes">
+                        <ul class="row m-0 pt-2 pb-2 list-unstyled item-movimentacoes">
+                            <li>Pix/Aline Guttner Ce</li>
+                            <li class="valor-recebido"> + R$ 320,20</li>
+                            <li class="d-flex align-items-center justify-content-center categoria">
+                                <img class="transferencias-imagem" src="imagens/Enviado.png" alt="">
+                                <p>Transf. recebidas</p>
+                            </li>
+                            <li>05 Nov</li>
+                            <li>11h03</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
