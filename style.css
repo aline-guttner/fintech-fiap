@@ -2,10 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300&display=swap");
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .myNavbar {
+  width: 100%;
   background-color: #7400B8;
   font-family: "Julius Sans One", sans-serif;
   -webkit-text-stroke: 1px #FFF;
@@ -15,14 +27,23 @@
 }
 
 .titulo {
+  width: 100%;
   background-color: #56CFE1;
   font-family: "Julius Sans One", sans-serif;
   -webkit-text-stroke: 1px #FFF;
   padding-left: 20px;
 }
 
+.conteudo {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .movimentacoes-container {
-  margin: 2px;
+  margin-bottom: 2px;
   display: grid;
   gap: 2px;
 }
@@ -106,4 +127,72 @@
 }
 .movimentacoes-container .caixa .movimentacoes .item-movimentacoes {
   border-bottom: solid 1px #005CA9;
+}
+
+.botao {
+  outline: none;
+  border: none;
+  align-self: center;
+  height: 40px;
+  background-color: #7400B8;
+  width: 99.5%;
+  margin-bottom: 2px;
+  border-radius: 0;
+  color: #FFF !important;
+  font-family: "Julius Sans One", sans-serif;
+  -webkit-text-stroke: 1px #FFF;
+}
+.botao:hover, .botao:active {
+  background-color: #820AD1 !important;
+}
+
+.despesas {
+  height: 100%;
+  background-color: #e4e1e1;
+}
+.despesas ::-moz-placeholder {
+  color: #B1B1B1;
+  font-family: "Kulim Park", sans-serif;
+}
+.despesas :-ms-input-placeholder {
+  color: #B1B1B1;
+  font-family: "Kulim Park", sans-serif;
+}
+.despesas ::placeholder {
+  color: #B1B1B1;
+  font-family: "Kulim Park", sans-serif;
+}
+.despesas .input-group {
+  background-color: #FFF;
+  margin: 6px;
+  width: 98.5%;
+}
+.despesas .input-group-text {
+  background-color: #7400B8;
+  color: #FFF;
+  -webkit-text-stroke: 1px #FFF;
+  font-family: "Julius Sans One", sans-serif;
+  border-radius: 0;
+  width: 119px;
+}
+.despesas .form-control {
+  border-radius: 0;
+  border: none;
+  padding: 1.6rem;
+}
+.despesas .select-container {
+  background-color: #FFF;
+  border-radius: 0;
+  margin: 6px 6px 3px 0;
+  border: none;
+  padding: 0.6rem;
+  flex-grow: 1;
+}
+.despesas .select-container select {
+  min-width: 190px;
+  border: none;
+  outline: none;
+}
+.despesas .data, .despesas .hora {
+  max-width: 230px;
 }/*# sourceMappingURL=style.css.map */

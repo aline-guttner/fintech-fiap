@@ -7,6 +7,8 @@ $cor3: #56CFE1;
 $cor4: #820AD1;
 $cor5: #005CA9;
 $cor6: #B1B1B1;
+$cor7: #820AD1;
+$cor8: #e4e1e1;
 $corGasto: red;
 $corReceita: green;
 $tamanhoFonte1: 1rem;
@@ -17,10 +19,22 @@ $borda1: solid 1.5rem;
 
 *{
     box-sizing: border-box;
-    overflow-x: hidden;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .myNavbar{
+    width: 100%;
     background-color: $cor1;
     font-family: $fonte1;
     -webkit-text-stroke: 1px $cor2;
@@ -30,14 +44,23 @@ $borda1: solid 1.5rem;
 }
 
 .titulo{
+    width: 100%;
     background-color: $cor3;
     font-family: $fonte1;
     -webkit-text-stroke: 1px $cor2;
     padding-left: 20px;
 }
 
+.conteudo{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .movimentacoes-container{
-    margin: 2px;
+    margin-bottom: 2px;
     display:grid;   
     gap: 2px;
     li{
@@ -138,6 +161,71 @@ $borda1: solid 1.5rem;
                 border-bottom: solid 1px $cor5;
             }
         }
+    }
+}
+
+.botao{
+    outline: none;
+    border: none;
+    align-self: center;
+    height: 40px;
+    background-color: $cor1;
+    width: 99.5%;
+    margin-bottom: 2px;
+    border-radius: 0;
+    color: $cor2!important;
+    font-family: $fonte1;
+    -webkit-text-stroke: 1px $cor2;
+    &:hover, &:active
+        {
+        background-color: $cor7!important;
+    }
+}
+
+.despesas{
+    height: 100%;
+    ::placeholder{
+        color: $cor6;
+        font-family: $fonte2;
+    }
+    background-color: $cor8;
+
+    .input-group{
+        background-color: $cor2;
+        margin: 6px;
+        width: 98.5%;
+    }
+    .input-group-text{
+        background-color: $cor1;
+        color: $cor2;
+        -webkit-text-stroke: 1px $cor2;
+        font-family: $fonte1;
+        border-radius: 0;
+        width: 119px;
+    }
+    
+    .form-control{
+        border-radius: 0;
+        border: none;
+        padding: 1.6rem;
+    }
+
+    .select-container{
+        background-color: $cor2;
+        border-radius: 0;
+        margin: 6px 6px 3px 0;
+        border: none;
+        padding: 0.6rem;
+        flex-grow: 1;
+        select{
+            min-width: 190px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .data, .hora{
+        max-width: 230px;
     }
 }
 
